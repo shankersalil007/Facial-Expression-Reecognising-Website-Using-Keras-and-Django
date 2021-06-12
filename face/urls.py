@@ -20,6 +20,7 @@ from faceapp1.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home,name='home'),
+    path('video_feed', video_feed, name='video_feed'),
     path('login-h/', loginpage, name="login-h"),
     path('register/', register, name="register"),
     path('logout-h/', logoutUser, name="logout-h"),
